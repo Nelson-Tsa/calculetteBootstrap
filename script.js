@@ -5,6 +5,7 @@ const mult = document.getElementById("btnmult");
 const div = document.getElementById("btndiv");
 const egal = document.getElementById("btneq");
 const result = document.getElementById("result");
+const decimal = document.getElementById("btndecimal");
 
 const btn1 = document.getElementById("btn1");
 const btn2 = document.getElementById("btn2");
@@ -69,4 +70,7 @@ btn8.addEventListener("click", function(){
 })
 btn9.addEventListener("click", function(){
     document.getElementById("result").value += 9;
+})
+decimal.addEventListener("click", function(){
+    document.getElementById("result").value += ".";
 })
