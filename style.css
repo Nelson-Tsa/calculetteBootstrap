@@ -1,0 +1,190 @@
+@media screen and (min-width: 200px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .row {
+        padding: 0;
+        margin: 0;
+    }
+
+    .col-12{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    div .col-3, div .col-2 {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        max-height: 4rem;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0;
+        margin-top: 10%;
+        padding-bottom: 1rem;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        border-radius: 20px;
+        background-color: rgb(0, 0, 0);
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .espace-occuper-resultat {
+        margin-bottom: 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .padding-resultat {
+        padding: 0;
+    }
+
+    /* Styles des boutons numériques */
+    #btn0, #btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7, #btn8, #btn9, #btndecimal {
+        background-color: #333333;
+        border-color: #333333;
+        color: #FFFFFF;
+        border-radius: 50%;
+        font-size: 1.5rem;
+    }
+
+    /* Styles des boutons de fonction */
+    #btnreset, #btneq {
+        background-color: #A5A5A5;
+        border-color: #A5A5A5;
+        color: #000000;
+        border-radius: 50%;
+        font-size: 1.5rem;
+    }
+
+    /* Styles des boutons d'opération */
+    #btnplus, #btnmoins, #btnmult, #btndiv {
+        background-color: #F5A623;
+        border-color: #F5A623;
+        color: #FFFFFF;
+        border-radius: 50%;
+        font-size: 1.5rem;
+    }
+
+    /* Hover pour boutons numériques */
+    #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover,
+    #btn6:hover, #btn7:hover, #btn8:hover, #btn9:hover, #btndecimal:hover {
+        background-color: #4a4a4a;
+        border-color: #4a4a4a;
+    }
+
+    /* Hover pour boutons d'opération */
+    #btnplus:hover, #btnmoins:hover, #btnmult:hover, #btndiv:hover {
+        background-color: #ffbb38;
+        border-color: #ffbb38;
+    }
+
+    /* Hover pour boutons de fonction */
+    #btnreset:hover, #btneq:hover {
+        background-color: #b5b5b5;
+        border-color: #b5b5b5;
+    }
+
+    /* Surcharge Bootstrap */
+    .btn-primary {
+        border: none;
+        outline: none;
+        padding-bottom: 10px;
+    }
+
+    .btn-primary:focus, .btn-primary:active {
+        box-shadow: none !important;
+    }
+
+    #btneq{
+        background-color: #b5b5b5;
+        border-color: #b5b5b5;
+        color: #FFFFFF;
+        border-radius: 15px;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    /* Style pour l'affichage */
+    #result {
+        background-color: #000000;
+        border-color: #000000;
+        color: #FFFFFF;
+        border-radius: 10px;
+        text-align: right;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 400px;
+        height: 500px;
+    }
+
+    .largeur-max {
+        width: 350px;
+    }
+
+    .hauteur-max {
+        height: 400px;
+        padding-top: 20px;
+    }
+
+    .hauteur-btn {
+        height: 60px;
+        width: 60px;
+        font-size: 1.6rem;
+        margin: 5px;
+    }
+
+    /* Ajustement pour les boutons larges */
+    .large-btn {
+        height: 60px;
+        width: 130px; /* Deux fois la largeur d'un bouton normal, ajusté pour l'espacement */
+        border-radius: 30px;
+    }
+
+    div .col-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+        padding: 0;
+        margin: 0;
+    }
+
+    div .col-2 {
+        flex: 0 0 16.6667%; /* 12 / 6 colonnes pour . 0 C */
+        max-width: 16.6667%;
+        padding: 0;
+        margin: 0;
+    }
+    .col-12{
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+}
